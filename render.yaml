@@ -3,7 +3,7 @@ services:
     name: memos-barton-doctrine-api
     env: node
     plan: free
-    rootDir: .
+    rootDir: barton-api
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
@@ -12,4 +12,10 @@ services:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 10000 
+        value: 10000
+    buildFilter:
+      paths:
+        - package.json
+        - src/**/*
+        - tsconfig.json
+        - render.yaml 
