@@ -12,10 +12,4 @@ services:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 10000
-    buildFilter:
-      paths:
-        - package.json
-        - src/**/*
-        - tsconfig.json
-        - render.yaml 
+        value: 10000 
