@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: memos-barton-doctrine-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npx ts-node src/memos/lib/memory/bartonApi.ts
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: NODE_ENV
+        value: production 
