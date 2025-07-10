@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: memos-barton-doctrine-api
+    name: barton-doctrine-api-v2
     env: node
     plan: free
     rootDir: .
